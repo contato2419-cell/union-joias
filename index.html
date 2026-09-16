@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Union Joias - Onde a excelência e o amor se encontram. Especialistas em Alianças, Anéis e Colares.">
+    <title>Union Joias | Ouro e Prata</title>
+    <!-- Fonts: Outfit for a modern, elegant look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <!-- Mobile Menu Toggle -->
+            <button class="icon-btn mobile-toggle" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+            
+            <a href="#" class="logo-link">
+                <!-- Fallback to text if logo image is missing -->
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&q=80&w=150&h=150" alt="Union Joias Logo" id="logo-img" style="border-radius: 50%;">
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#hero">Início</a>
+                <a href="#aliancas">Alianças</a>
+                <a href="#aneis">Anéis</a>
+                <a href="#colares">Colares</a>
+                <a href="#footer">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="cart-toggle" aria-label="Carrinho">
+                    <i class="ph ph-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero" id="hero">
+        <div class="carousel" id="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1920');">
+                <div class="hero-content">
+                    <h1>Onde a excelência e o amor se encontram</h1>
+                    <p>Descubra nossa nova coleção de alianças exclusivas.</p>
+                    <a href="#aliancas" class="btn-primary">Ver Coleção</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=1920');">
+                <div class="hero-content">
+                    <h1>Momentos Inesquecíveis</h1>
+                    <p>Joias desenhadas para eternizar suas histórias.</p>
+                    <a href="#aneis" class="btn-primary">Explorar Anéis</a>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1599643478524-fb66f7ca065b?auto=format&fit=crop&q=80&w=1920');">
+                <div class="hero-content">
+                    <h1>Brilho que Inspira</h1>
+                    <p>Ouro e Prata trabalhados com perfeição.</p>
+                    <a href="#colares" class="btn-primary">Descobrir Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators" id="hero-indicators"></div>
+    </section>
+
+    <!-- Categories / Catalogs -->
+    <main>
+        <!-- Category: Alianças -->
+        <section class="catalog-section" id="aliancas">
+            <div class="section-header">
+                <h2>Alianças</h2>
+                <div class="scroll-hint">Arraste <i class="ph ph-arrow-right"></i></div>
+            </div>
+            <div class="products-carousel drag-scroll">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=500" alt="Aliança Diamantada Ouro 18k" draggable="false">
+                        <button class="add-to-cart" data-id="p1" data-name="Aliança Diamantada Ouro 18k" data-price="2500" data-img="https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aliança Diamantada Ouro 18k</h3>
+                        <p class="price">R$ 2.500,00</p>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&q=80&w=500" alt="Aliança Lisa Clássica Ouro" draggable="false">
+                        <button class="add-to-cart" data-id="p2" data-name="Aliança Lisa Clássica Ouro" data-price="1800" data-img="https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aliança Lisa Clássica Ouro</h3>
+                        <p class="price">R$ 1.800,00</p>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=500" alt="Par Alianças Chanfradas" draggable="false">
+                        <button class="add-to-cart" data-id="p3" data-name="Par Alianças Chanfradas" data-price="3200" data-img="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Par Alianças Chanfradas</h3>
+                        <p class="price">R$ 3.200,00</p>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620656798579-2425af5a7304?auto=format&fit=crop&q=80&w=500" alt="Meia Aliança Cravejada" draggable="false">
+                        <button class="add-to-cart" data-id="p4" data-name="Meia Aliança Cravejada" data-price="1200" data-img="https://images.unsplash.com/photo-1620656798579-2425af5a7304?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Meia Aliança Cravejada</h3>
+                        <p class="price">R$ 1.200,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Anéis -->
+        <section class="catalog-section" id="aneis">
+            <div class="section-header">
+                <h2>Anéis de Noivado & Solitários</h2>
+                <div class="scroll-hint">Arraste <i class="ph ph-arrow-right"></i></div>
+            </div>
+            <div class="products-carousel drag-scroll">
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=500" alt="Anel Solitário Ouro Branco" draggable="false">
+                        <button class="add-to-cart" data-id="p5" data-name="Anel Solitário Ouro Branco" data-price="4500" data-img="https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anel Solitário Ouro Branco</h3>
+                        <p class="price">R$ 4.500,00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&q=80&w=500" alt="Anel Topázio Azul" draggable="false">
+                        <button class="add-to-cart" data-id="p6" data-name="Anel Topázio Azul" data-price="1500" data-img="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anel Topázio Azul</h3>
+                        <p class="price">R$ 1.500,00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=500" alt="Anel de Ouro 18k Minimalista" draggable="false">
+                        <button class="add-to-cart" data-id="p7" data-name="Anel de Ouro 18k Minimalista" data-price="900" data-img="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=200">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anel Ouro 18k Minimalista</h3>
+                        <p class="price">R$ 900,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Smart Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Sua Sacola</h2>
+            <button class="icon-btn close-cart" id="close-cart" aria-label="Fechar Carrinho">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+            <div class="empty-cart-msg">Sua sacola está vazia.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">R$ 0,00</span>
+            </div>
+            <button class="btn-primary w-100" id="checkout-btn" disabled>
+                <i class="ph-fill ph-whatsapp-logo"></i> Finalizar Pedido
+            </button>
+            <p class="cart-note">Você será redirecionado para o WhatsApp da Union Joias.</p>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-grid">
+            <div class="footer-col brand">
+                <h2 class="footer-logo">Union Joias</h2>
+                <p>Onde a excelência e o amor se encontram. Joias em Ouro e Prata de alta qualidade para momentos inesquecíveis.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/unionjoias/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="http://linktr.ee/unionjoiasloja" target="_blank" aria-label="Linktree"><i class="ph ph-link"></i></a>
+                    <a href="https://wa.me/5531982923791" target="_blank" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><i class="ph ph-clock"></i> Com horário agendado</li>
+                    <li>Segunda à Sexta: 09h às 18h</li>
+                    <li>Sábado: 09h às 11h</li>
+                    <li>Domingo: Fechado</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Localização</h3>
+                <address>
+                    <i class="ph ph-map-pin"></i> 
+                    Edifício Maia<br>
+                    R. Espírito Santo, 341 - sala 311<br>
+                    Centro, Belo Horizonte - MG<br>
+                    30160-030
+                </address>
+                <a href="https://maps.google.com/?q=Union+Joias+Belo+Horizonte" target="_blank" class="map-link">Ver no mapa</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="ph ph-whatsapp-logo"></i> (31) 98292-3791</li>
+                    <li><i class="ph ph-star"></i> Avaliação: 5.0 (75 avaliações)</li>
+                </ul>
+                <div class="badge-empresa">
+                    Se identifica como uma empresa de empreendedoras
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Union Joias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
