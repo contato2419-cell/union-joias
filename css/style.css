@@ -604,23 +604,52 @@ main {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
     .nav-links {
-        display: none; /* Simplification for this demo, could be a hamburger menu */
+        display: none; 
     }
     .mobile-toggle {
         display: block;
     }
+    .hero {
+        min-height: 80vh;
+        height: 80vh;
+    }
+    .hero-content {
+        padding: 0 1rem;
+    }
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     .product-card {
-        min-width: 250px;
+        min-width: 220px;
+    }
+    .img-wrapper img {
+        height: 280px;
+    }
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    .section-header h2 {
+        font-size: 1.5rem;
     }
 }
