@@ -678,16 +678,81 @@ main {
    ========================================================================== */
 .banner-section {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    background-color: var(--bg-secondary);
     display: flex;
     justify-content: center;
-    background-color: #000;
+    padding: 4rem 5%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .banner-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.banner-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .banner-img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 500px;
     height: auto;
-    object-fit: cover;
-    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.banner-text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-text-wrapper h2 {
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+}
+
+.banner-text-wrapper p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: var(--gold-color);
+    color: #000;
 }
