@@ -672,3 +672,22 @@ main {
         font-size: 1.5rem;
     }
 }
+
+/* ==========================================================================
+   BANNER SECTION
+   ========================================================================== */
+.banner-section {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
