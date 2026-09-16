@@ -228,6 +228,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 6. Magnifying Glass Effect
+    const imgWrappers = document.querySelectorAll('.img-wrapper');
+    imgWrappers.forEach(wrapper => {
+        const img = wrapper.querySelector('img');
+        
+        wrapper.addEventListener('mousemove', (e) => {
+            // Get bounding rectangle to calculate relative cursor position
+            const rect = wrapper.getBoundingClientRect();
+            
+            // Calculate X and Y as percentages
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            
+            // Update transform-origin and scale
+            img.style.transformOrigin = `${x}% ${y}%`;
+            img.style.transform = 'scale(2.5)';
+        });
+
+        wrapper.addEventListener('mouseleave', () => {
+            // Reset when mouse leaves
+            img.style.transformOrigin = 'center center';
+            img.style.transform = 'scale(1)';
+        });
+    });
+
     // Initial render
     renderCart();
 });

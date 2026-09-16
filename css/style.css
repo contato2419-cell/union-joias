@@ -312,12 +312,12 @@ main {
     height: 350px;
     object-fit: contain;
     background-color: #ffffff;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
     pointer-events: none; /* helps with drag scroll */
 }
 
-.product-card:hover .img-wrapper img {
-    transform: scale(1.05);
+.img-wrapper:hover {
+    cursor: zoom-in;
 }
 
 .add-to-cart {
